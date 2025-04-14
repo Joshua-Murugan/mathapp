@@ -54,6 +54,7 @@ class MainActivity : AppCompatActivity() {
         } else {
             // If any input is missing, show an error message
             textView.text = "Please enter both numbers."
+
         }
     }
 }
