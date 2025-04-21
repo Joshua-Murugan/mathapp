@@ -14,8 +14,10 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/_b7c95e9_8fcc_4c7f_8598_5b6cdf4a57e9" />
 
     <EditText
@@ -75,11 +77,37 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="130dp"
         android:text="CALCULATE"
+        app:layout_constraintBottom_toTopOf="@+id/edtFinalAnswer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtEnterValueTwo" />
+        app:layout_constraintTop_toBottomOf="@+id/edtEnterValueTwo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!-- RadioGroup with RadioButtons inside it -->
+    <RadioGroup
+        android:id="@+id/radioGroupOperations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/edtEnterValueTwo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/radioAddition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Addition" />
+
+        <RadioButton
+            android:id="@+id/radioSubtraction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subtraction" />
+    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
